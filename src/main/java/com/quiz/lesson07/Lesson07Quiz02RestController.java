@@ -66,7 +66,7 @@ public class Lesson07Quiz02RestController {
 	@GetMapping("/7")
 	public List<RecruitEntity> quiz02_7(){
 		
-		// 7) native query
+		// 7) native query JPQL문법이 아니라 내가 만든 쿼리문으로 작성
 		return recruitRepository.findByDeadlineAfterAndSalaryGreaterThanEqualAndTypeOrderBySalaryDesc("2026-04-10", 8100, "정규직");
 	}
 
